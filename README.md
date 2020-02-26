@@ -5,8 +5,10 @@
 [![Build Status](https://img.shields.io/badge/docker-pull%20vecosy%2Fvecosy%3Adev-blue)](https://hub.docker.com/repository/docker/vecosy/vecosy)
 ![GitHub](https://img.shields.io/github/license/vecosy/vecosy)
 
-**vecosy** is a centralized system based on the application version.
+**vecosy** is a centralized configuration system
 
+
+![](./docs/schema.png)
 
 ## Features
 * confiurable by a GIT repo
