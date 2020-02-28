@@ -34,7 +34,7 @@ Vecosy supports two different merging systems, each one use a different naming c
 ### SmartConfig
 ![smart config](./docs/smart_config.png)
 
-The `config.yml` in the root folder is the common configuration that will be merged by the specific environment `config.yml`.
+The `config.yml` in the root folder is the common configuration that will be merged by the specific environment (for dev env: `dev/config.yml`).
 
 
 #### Example
@@ -45,7 +45,7 @@ https://github.com/vecosy/config-sample/tree/app1/1.0.0
 
 It uses the [spring-cloud](https://cloud.spring.io/spring-cloud-config/reference/html) naming convention.
 
-The `application.yml` will be overriden by `[appname].yml` file that will be overriden by `[appname]-[label].yml`
+The `application.yml` will be overriden by `[appname].yml` file that will be overriden by `[appname]-[profile].yml`
 
 #### Example
 https://github.com/vecosy/config-sample/tree/spring-app1/1.0.0
@@ -78,7 +78,7 @@ $ go install github.com/square/go-jose/jose-util
 # the jws payload is not important
 $ echo "myAppName" | jose-util sign --key priv.key --alg RS256
 ```
-the generated token can be used as *Bearer* Authorization header or in the `token` variable in the GRPC metadata header
+the generated token can be used as *Bearer* Authorization header, in the `token` variable in the GRPC metadata header or as spring cloud configuration [token](https://github.com/vecosy/spring-boot-example/blob/master/src/main/resources/bootstrap.yml)  
 
 ### 3. Configure your application to use the JWS token
 
@@ -86,7 +86,7 @@ the generated token can be used as *Bearer* Authorization header or in the `toke
 passing on the `vecosy.New(...)` parameter 
 
 #### Spring-cloud application (java)
-by Spring security
+by Spring cloud configuration [token](https://github.com/vecosy/spring-boot-example/blob/master/src/main/resources/bootstrap.yml)
 
 ## Disable the security
 the `--insecure` command line option will disable the security system.
