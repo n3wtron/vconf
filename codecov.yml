@@ -1,5 +1,6 @@
 ignore:
   - "**/*.pb.go"
   - "**/*mock*"
+  - "**/errors.go"
 coverage:
   range: "50..100"
