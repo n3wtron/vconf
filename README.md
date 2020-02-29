@@ -1,10 +1,10 @@
-
 # Product Versioned Configuration System
 [![Build Status](https://travis-ci.com/vecosy/vecosy.svg)](https://travis-ci.com/vecosy/vecosy)
 [![codecov](https://codecov.io/gh/vecosy/vecosy/branch/develop/graph/badge.svg)](https://codecov.io/gh/vecosy/vecosy)
 [![Build Status](https://img.shields.io/badge/docker-pull%20vecosy%2Fvecosy%3Adev-blue)](https://hub.docker.com/repository/docker/vecosy/vecosy)
 [![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/vecosy/community)
 ![GitHub](https://img.shields.io/github/license/vecosy/vecosy)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fvecosy%2Fvecosy.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fvecosy%2Fvecosy?ref=badge_shield)
 
 **vecosy** is a centralized configuration system
 
@@ -339,3 +339,7 @@ for [spring-app1/1.0.0](https://github.com/vecosy/config-sample/tree/spring-app1
 * metrics
 * different config repo type (etcd, redis,...)
 * improving spring compatibility (watch changes doesn't work right now)
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fvecosy%2Fvecosy.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fvecosy%2Fvecosy?ref=badge_large)
